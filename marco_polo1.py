@@ -2,6 +2,10 @@ import radio
 import random
 from microbit import display, Image, button_a, sleep
 
+my_id = 'four'
+call_id = 'one'
+everyone_called = 'fire'
+
 # Create the "flash" animation frames. Can you work out how it's done?
 myflash = [Image().invert()*(i/9) for i in range(9, -1, -1)]
 
@@ -12,10 +16,10 @@ radio.on()
 while True:
     # Button A sends a "flash" message.
     if button_a.was_pressed():
-        radio.send('one')  # a-ha
+        radio.send(call_id)  # a-ha
     # Read any incoming messages.
     incoming = radio.receive()
-    if incoming == 'four' or incoming == 'fire':
+    if incoming == my_id or incoming == everyone_called:
         incoming = 'nothing'
         # If there's an incoming "flash" message display
         # the firefly flash animation after a random short
@@ -25,7 +29,7 @@ while True:
         # Randomly re-broadcast the flash message after a
         # slight delay.
         sleep(1000)
-        radio.send('one')
+        radio.send(call_id)
         #if random.randint(0, 9) == 0:
             #sleep(500)
             #radio.send('flash')  # a-ha
