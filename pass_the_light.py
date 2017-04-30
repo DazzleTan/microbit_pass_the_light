@@ -3,8 +3,9 @@ import random
 from microbit import display, Image, button_a, sleep
 
 # my_id is the id of this microbit.  Call id is the next microbit in the ordinal sequence
-my_id = 'four'
-call_id = 'one'
+# when assigning the last microbit's call_id, be sure to assign the value of the first microbit! (ie. if 4 are being used, microbit four will call microbit 1)
+my_id = 'one'
+call_id = 'two'
 everyone_called = 'fire'
 
 # Create the "flash" animation frames. Can you work out how it's done?
