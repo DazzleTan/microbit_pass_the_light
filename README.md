@@ -10,6 +10,9 @@ Microbit "firefly" project inspired by example provided in microbit documentatio
 
 The program assigns ordinal ids to the microbits via a variable.  The program begins when microbit one puts out a message signaling for microbit two to flash.  The microbit flashes and sends a signal to three, three sends a signal to four, and four sends a signal back to one.
 
-Additionally, micro bit four has been given a special privilege: if you press the "a" button on microbit four, all other microbits will light up.
+The first signal begins when you press the 'a' button.  Press it again at any time to add another firing sequence into the mix.
+
+You can press the 'b' button at any time to light up all microbits at once.  This has some pretty neat after effects as each microbit then tries to send out its reply signal : )
+
 
 
