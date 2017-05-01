@@ -1,5 +1,9 @@
 import radio
 import random
+
+#The following import statement may look new to you
+#We are merely specifying the functions in the library that will be used
+#Rather than preceding library function calls with "microbit.", we just use the name "button_a" for instance.
 from microbit import display, Image, button_a, sleep
 
 # my_id is the id of this microbit.  Call id is the next microbit in the ordinal sequence
