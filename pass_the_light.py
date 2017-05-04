@@ -12,7 +12,7 @@ my_id = 'one'
 call_id = 'two'
 everyone_called = 'fire'
 
-# Create the "flash" animation frames. Can you work out how it's done?
+# Create the "flash" animation frames. Can you work out how it's done? Me neither! still working on it.
 myflash = [Image().invert()*(i/9) for i in range(9, -1, -1)]
 
 # The radio won't work unless it's switched on.
