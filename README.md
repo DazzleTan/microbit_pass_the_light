@@ -6,6 +6,8 @@ Microbit "firefly" project inspired by example provided in microbit documentatio
 1. Multiple microbits (I used four)
 2. Micropython text editor compatible with microbit.  I used Mu.
 
+NOTE: code alteration is required for this code to work.
+
 ### What it looks like in action:
 
 The program assigns ordinal ids to the microbits via a variable.  The program begins when microbit one puts out a message signaling for microbit two to flash.  The microbit flashes and sends a signal to three, three sends a signal to four, and four sends a signal back to one.
