@@ -10,7 +10,7 @@ NOTE: code alteration is required for this code to work.
 
 ### What it looks like in action:
 
-The program assigns ordinal ids to the microbits via a variable.  The program begins when microbit one puts out a message signaling for microbit two to flash.  The microbit flashes and sends a signal to three, three sends a signal to four, and four sends a signal back to one.
+The programmer assigns ordinal ids to the microbits via a variable.  The program begins when microbit one puts out a message signaling for microbit two to flash.  The microbit flashes and sends a signal to three, three sends a signal to four, and four sends a signal back to one.
 
 The first signal begins when you press the 'a' button.  Press it again at any time to add another firing sequence into the mix.
 
